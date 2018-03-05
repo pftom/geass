@@ -43,4 +43,29 @@ _createStore 允许提前创建Store，做配置 [√]
 
  npm脚本内部调用npm package 命令
 
-反复测试迭代改进geassjs.
+ 反复测试迭代改进geassjs.
+
+ ## 2018 年 3 月 05 日
+
+  关于 geass-cli 的一些想法：
+
+- `npm instal -g geass-cli`
+
+- 安装之后，会在全局暴露一个 `geass` 命令
+
+- `geass` 命令有以下选项
+
+  ```javascript
+  # create a new project
+  geass new my-app
+
+  # development command
+  other command such as  start / test / build , will be use original create-react-app
+
+  # create a new components
+  geass g component my-new-component
+  ```
+
+
+
+关于 test 的一些想法：写一套测试的教程
