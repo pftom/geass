@@ -69,3 +69,5 @@ _createStore 允许提前创建Store，做配置 [√]
 
 
 关于 test 的一些想法：写一套测试的教程
+
+关于功能改进：在同一个 component 里面，发起 Action 不需要加前缀
