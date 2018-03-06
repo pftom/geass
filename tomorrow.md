@@ -58,12 +58,18 @@ _createStore 允许提前创建Store，做配置 [√]
   ```javascript
   # create a new project
   geass new my-app
+  geass -n my-app
 
   # development command
   other command such as  start / test / build , will be use original create-react-app
 
-  # create a new components
-  geass g component my-new-component
+  # create a new component
+  geass generate my-new-component
+  geass -g my-new-component
+
+  # test a component
+  geass test component-name
+  geass -t component-name
   ```
 
 
@@ -71,3 +77,47 @@ _createStore 允许提前创建Store，做配置 [√]
 关于 test 的一些想法：写一套测试的教程
 
 关于功能改进：在同一个 component 里面，发起 Action 不需要加前缀
+
+ ## 2018 年 3 月 06 日
+
+ **尽量达到零配置：一切该配置的在内部配置好**
+  - eslint
+  - prettier
+
+ 等，支持StyledComponent
+
+
+
+ **CLI 初始化提供创建 四 块文件：**
+  - index.js （entry 文件）
+
+  - components （要编写的组件）
+
+  - images （网页 favicon）
+
+  - tests （tests 文件）
+
+    ​
+
+
+ **geass-scripts:**
+
+  geass-scripts start
+
+  geass-scripts test
+
+  geass-scripts build
+
+  // lint，style guide， code formatter 等
+
+  geass-scripts lint
+
+  // 未来考虑加入 docker 持续集成和持续部署
+
+  geass-scripts deploy
+
+
+
+**CLI 命令增加： 一键生成 test 脚本**
+
+geass test component-name
