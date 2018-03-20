@@ -58,18 +58,17 @@ _createStore 允许提前创建Store，做配置 [√]
   ```javascript
   # create a new project
   geass new my-app
-  geass -n my-app
+  geass my-app
 
   # development command
   other command such as  start / test / build , will be use original create-react-app
 
   # create a new component
-  geass generate my-new-component
-  geass -g my-new-component
+  geass g component my-new-component
+  geass  my-new-component
 
   # test a component
-  geass test component-name
-  geass -t component-name
+  geass g test component-name
   ```
 
 
